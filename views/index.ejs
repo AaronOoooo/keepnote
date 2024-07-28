@@ -1,0 +1,10 @@
+<% notes.forEach(note => { %>
+    <div class="note" data-id="<%= note.id %>">
+        <div class="note-content"><%= note.content %></div>
+        <div class="note-footer">
+            <span><%= new Date(note.created_at).toLocaleString('en-US', { hour12: true }) %></span>
+            <button class="edit-note">Edit</button>
+            <button class="move-top">Move to Top</button>
+        </div>
+    </div>
+<% }) %>

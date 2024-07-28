@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeepNote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <form id="note-form" action="/add" method="post">
+            <textarea name="content" id="content" placeholder="Write your note here..." required></textarea>
+            <button type="submit">Save</button>
+        </form>
+        <div id="notes">
+            <!-- Notes will be loaded here -->
+        </div>
+        <button id="load-more">Show More</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
